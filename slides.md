@@ -170,10 +170,10 @@ If something looks off, shout "REJECT!"
 
 ---
 
-<div class="center-stack items-center text-center">
+<a class="demo-link center-stack items-center text-center" href="https://agentloop-zsq7.onrender.com/">
   <div class="kicker">Approval Loop</div>
   <div class="huge"><span class="live-dot"></span>Live demo</div>
-</div>
+</a>
 
 <style>
 .live-dot {
@@ -189,10 +189,17 @@ If something looks off, shout "REJECT!"
 @keyframes pulse {
   50% { opacity: 0.25; }
 }
+.demo-link,
+.demo-link:hover {
+  color: inherit;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 
 <!--
-Switch to the app: Approval Loop.
+Click anywhere on the slide to open the app: Approval Loop.
 -->
 
 ---
