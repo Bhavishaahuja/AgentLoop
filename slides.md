@@ -295,10 +295,10 @@ Two loops. Same agent. The only difference is who has to justify the interruptio
 
 ---
 
-<div class="center-stack items-center text-center">
+<a class="demo-link center-stack items-center text-center" href="https://agentloop-zsq7.onrender.com/">
   <div class="kicker">Attention Loop</div>
   <div class="huge"><span class="live-dot"></span>Live demo</div>
-</div>
+</a>
 
 <style>
 .live-dot {
@@ -314,9 +314,18 @@ Two loops. Same agent. The only difference is who has to justify the interruptio
 @keyframes pulse {
   50% { opacity: 0.25; }
 }
+.demo-link,
+.demo-link:hover {
+  color: inherit;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
 </style>
 
 <!--
+Click anywhere on the slide to open the app: Attention Loop.
+
 Same agent, same actions, same human.
 Routine actions continue on their own. It only stops for step 13.
 -->
