@@ -510,33 +510,49 @@ Be explicit: the findings are their research. The demo is my prototype.
 
 ---
 
-<div class="flex h-full items-center gap-12">
-  <div class="flex-1">
-    <div class="text-3xl font-bold leading-snug">
-      I still click <span class="approve-btn" style="font-size:1.4rem;vertical-align:middle">Approve</span> for a living.<br/>
-      <span class="muted">Now I ask: am I still looking?</span>
+<div class="flex flex-col h-full">
+  <div class="flex flex-1 items-center gap-10">
+    <div class="flex-1">
+      <div class="text-3xl font-bold leading-snug">
+        I still click <span class="approve-btn" style="font-size:1.4rem;vertical-align:middle">Approve</span> for a living.<br/>
+        <span class="muted">Now I ask: am I still looking?</span>
+      </div>
+      <div v-click class="exit-line mt-8">Keep the human capable of noticing <span class="accent">when the loop breaks.</span></div>
     </div>
-    <div v-click class="big mt-10">Keep the human capable of noticing <span class="accent">when the loop breaks.</span></div>
+    <div class="flex gap-6">
+      <div class="qr">
+        <img src="/qr-bhavisha-linkedin.png" alt="LinkedIn QR code" />
+        <div class="qr-label">LinkedIn</div>
+      </div>
+      <div class="qr">
+        <img src="/qr-physicalmcp-x.png" alt="X QR code for @usephysicalmcp" />
+        <div class="qr-label">Physical MCP on X</div>
+      </div>
+    </div>
   </div>
-  <div class="qr">
-    <img src="/qr-bhavisha-linkedin.png" alt="LinkedIn QR code" />
-    <div class="qr-label">Bhavisha Ahuja</div>
+  <div class="hackathon">
+    <div>
+      <div class="hack-title">Meta Global AI Developer Hackathon <span class="hack-dates">OCT 26–NOV 4</span></div>
+      I'm building <span class="accent">Physical MCP</span> with a systems integration engineer.
+      One of the judging criteria is virality on X, so a follow would really help.
+    </div>
+    <a class="x-link" href="https://x.com/usephysicalmcp" target="_blank">x.com/usephysicalmcp</a>
   </div>
 </div>
 
 <style>
+.exit-line {
+  font-size: 2.6rem;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
 .qr {
   position: relative;
-  width: 190px;
-  height: 190px;
+  width: 150px;
+  height: 150px;
   flex-shrink: 0;
-  border: 1px dashed var(--muted);
   border-radius: 12px;
-  display: grid;
-  place-items: center;
-  font-family: var(--mono);
-  font-size: 0.75rem;
-  color: var(--muted);
   background: #1c1d22;
 }
 .qr img {
@@ -549,12 +565,51 @@ Be explicit: the findings are their research. The demo is my prototype.
 }
 .qr-label {
   position: absolute;
-  bottom: -1.8rem;
+  bottom: -1.6rem;
   width: 100%;
   text-align: center;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+}
+.hackathon {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+.hack-title {
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: 0.35rem;
+}
+.hack-dates {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  background: #0866ff;
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  vertical-align: middle;
+}
+.x-link,
+.x-link:hover {
+  font-family: var(--mono);
+  font-size: 1.1rem;
+  color: var(--accent);
+  border: none;
+  white-space: nowrap;
 }
 </style>
 
 <!--
 Callback to slide 1.
+
+Then: I'm in the Meta Global AI Developer Hackathon (Oct 26 to Nov 4) building Physical MCP with a systems integration engineer. Virality on X is one of the criteria, so please scan the right-hand code or follow x.com/usephysicalmcp.
 -->
